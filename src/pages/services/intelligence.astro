@@ -1,0 +1,284 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+const metadata = {
+  title: 'AI Intelligence & Outreach — From Targets to Qualified Meetings',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Sample Report',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'See Our MQL Process',
+        href: '#process',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      From ABM Target Accounts to <span class="text-accent dark:text-white">Qualified Meetings</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">AI-Powered Intelligence + Done-For-You Outreach That Books Real Conversations</span><br/>
+      <span class="mt-4 block">
+        Stop drowning in research and cold outreach. We identify decision makers, craft personalised messages, AND can handle the entire outreach process—delivering warm, qualified meetings directly to your sales team.
+      </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="mt-4 text-sm">
+        <strong>Led by Patrick Rea FCIM, CIM ABM Course Director | 300+ Enterprises Trained</strong>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- The Challenge Section -->
+  <Features
+    id="challenges"
+    title="Your Team Shouldn't Be Doing This"
+    subtitle="What if qualified meetings just appeared in your calendar—with the right people, pre-warmed and ready to buy?"
+    items={[
+      {
+        title: 'Who Should We Contact?',
+        description: 'Endless LinkedIn searches with incomplete data',
+        icon: 'tabler:user-question',
+      },
+      {
+        title: 'What Should We Say?',
+        description: 'Generic messages that get ignored by executives',
+        icon: 'tabler:message-x',
+      },
+      {
+        title: 'How Do We Execute?',
+        description: 'SDRs spending 80% of time on admin, not selling',
+        icon: 'tabler:clock-stop',
+      },
+      {
+        title: 'Where Are Our MQLs?',
+        description: 'Inconsistent pipeline despite best efforts',
+        icon: 'tabler:calendar-question',
+      },
+    ]}
+  />
+
+  <!-- Solution Overview -->
+  <Features2
+    title="Choose Your Level of Support"
+    subtitle="From research to booked meetings—choose how much you want us to handle"
+    items={[
+      {
+        title: 'Intelligence Only (DIY)',
+        description: 'We provide the data, you do the outreach. Stakeholder maps in 72 hours, personalised messaging templates, CRM-ready format, your team executes.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Intelligence + Campaigns (Done With You)',
+        description: 'We set up, you manage. Everything in Intelligence plus LinkedIn campaign setup, email sequences created, training for your team.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Full Service (Done For You) [FEATURED]',
+        description: 'We handle everything, you take the meetings. Complete account research, LinkedIn outreach management, multi-channel sequences, qualified meetings delivered.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Full Service Showcase -->
+  <Steps
+    id="process"
+    title="Your Complete Outreach Engine"
+    subtitle="Typical monthly delivery: 8-15 qualified meetings from 50 target accounts"
+    items={[
+      {
+        title: 'Week 1: ABM Intelligence Gathering',
+        description: 'Map (average) 6-12 stakeholders per account. Research priorities and pain points. Craft role-specific messages.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Week 2-3: Multi-Channel Outreach',
+        description: 'LinkedIn connection requests. Personalised InMail sequences. Follow-up campaigns. Email nurture streams.',
+        icon: 'tabler:send',
+      },
+      {
+        title: 'Week 4+: Meeting Delivery',
+        description: 'Qualified conversations booked. Meeting briefs provided. Handoff to sales team. Campaign optimisation.',
+        icon: 'tabler:calendar-event',
+      },
+    ]}
+  />
+
+  <!-- MQL Delivery Section -->
+  <Content
+    id="mql"
+    title="Qualified Meetings, Not Just Leads"
+    items={[
+      {
+        title: 'Pre-Qualified Prospects',
+        description: 'Decision makers who have expressed interest',
+      },
+      {
+        title: 'Meeting-Ready Conversations',
+        description: 'Beyond awareness, into evaluation',
+      },
+      {
+        title: 'Complete Context',
+        description: 'Full brief on prospect\'s situation and needs',
+      },
+      {
+        title: 'Calendar Bookings',
+        description: 'Confirmed slots with the right stakeholders',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Qualified Meetings',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Our MQL Criteria</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>✓ Senior decision maker (Director, C+)</li>
+        <li>✓ Confirmed budget authority</li>
+        <li>✓ Active project or initiative</li>
+        <li>✓ Agreed to specific meeting</li>
+      </ul>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Proof Section -->
+  <CallToAction
+    id="proof"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Request Your Free Analysis',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      See It In Action — Free Sample Report
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <strong>Part 1: Intelligence Sample</strong><br/>
+      Send us any target account. We'll show you: Stakeholders we identify. Messages we'd craft. Outreach strategy we'd use.<br/><br/>
+
+      <strong>Part 2: Campaign Audit</strong><br/>
+      Already running outreach? We'll review your: LinkedIn messaging. Response rates. Conversion opportunities.
+    </Fragment>
+  </CallToAction>
+
+  <!-- Services Gateway -->
+  <Features2
+    title="Complete ABM Ecosystem"
+    items={[
+      {
+        title: 'AI Intelligence',
+        description: 'Research & data only. 72-hour turnaround.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Outreach Services',
+        description: 'Done-for-you LinkedIn. MQL delivery.',
+        icon: 'tabler:send',
+      },
+      {
+        title: 'ABM Training',
+        description: 'CIM-certified programmes. Build internal capability.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'GTM Planning',
+        description: 'myGTMplan methodology. Strategic alignment.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'ROI Accelerator',
+        description: 'Performance optimisation. Technology integration.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
+  <!-- Call to Action Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Sample Report',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Start Pilot',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Book Strategy Call',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Choose Your Starting Point
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <strong>Option 1: Free Intelligence Sample</strong> — See our research quality. No commitment. 48-hour delivery.<br/><br/>
+
+      <strong>Option 2: Pilot Programme</strong> — 10 accounts. Full service trial. Prove the ROI.<br/><br/>
+
+      <strong>Option 3: Strategy Session</strong> — Discuss your pipeline goals. Review current approach. Get recommendations.
+    </Fragment>
+  </CallToAction>
+
+  <!-- Trust Indicators -->
+  <Content
+    isAfterContent
+    title="Why Companies Choose Us"
+  >
+    <Fragment slot="content">
+      <div class="flex flex-wrap justify-center gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold text-accent">300+</p>
+          <p class="text-sm">Enterprise Clients Trained</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-accent">CIM</p>
+          <p class="text-sm">ABM Course Director</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-accent">Since 2015</p>
+          <p class="text-sm">Delivering MQLs</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content>
+</Layout>

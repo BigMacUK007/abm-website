@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: ABM+AI Solutions
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: ABM+AI Solutions
+    template: '%s — ABM+AI Solutions'
+  description: "Transform Your B2B Revenue Engine With AI-Powered ABM. Intelligence, Training & Strategy Services by Patrick Rea FCIM, CIM ABM Course Director."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: ABM+AI Solutions
     images:
       - url: '~/assets/images/default.png'
         width: 1200

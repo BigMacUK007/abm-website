@@ -1,0 +1,313 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'AI Transformation — Your AI Transformation Starts With People',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get AI Readiness Assessment',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Book Strategic Consultation',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Your AI Transformation Starts With <span class="text-accent dark:text-white">People, Not Technology</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">Drive Exponential Productivity Through Leadership Alignment & Team Empowerment—Beyond Tool Selection</span><br/>
+      <span class="mt-4 block">
+        While your competitors remain trapped in vendor demonstrations and failed pilots, we deliver genuine transformation. No unauthorised AI usage. No squandered budgets. Just aligned leadership and teams leveraging AI for remarkable outcomes.
+      </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="mt-4 text-sm">
+        <strong>Led by Patrick Rea FCIM | CIM ABM Course Director | Pioneer in AI-Enhanced Business Strategy</strong>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- The Reality Check Section -->
+  <Features
+    title="Recognise This AI Implementation Challenge?"
+    subtitle="Most AI initiatives fail because they prioritise technology over people. We take a fundamentally different approach."
+    items={[
+      {
+        title: 'Decision Paralysis',
+        description: 'Endless evaluation cycles with no meaningful progress',
+        icon: 'tabler:circle-x',
+      },
+      {
+        title: 'Unauthorised AI Usage',
+        description: 'Teams experimenting independently, creating risk and inconsistency',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'Executive Misalignment',
+        description: 'Leadership lacks unified vision and commitment',
+        icon: 'tabler:users-minus',
+      },
+      {
+        title: 'Capability Gap',
+        description: 'Growing disparity between AI adopters and those left behind',
+        icon: 'tabler:chart-arrows',
+      },
+    ]}
+  />
+
+  <!-- The Paradigm Shift -->
+  <Content
+    title="Why Technology-First Strategies Don't Deliver"
+    items={[
+      {
+        title: 'Conventional Approach',
+        description: 'Purchase platforms, then push adoption. Focus on features, neglect culture. Technology-driven, business-resistant.',
+      },
+      {
+        title: 'Our Approach',
+        description: 'Executive alignment precedes technology. Cultural readiness ensures success. Business-led, technology-supported.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Transformation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The Reality</h3>
+      Your challenge isn't technological. It's organisational alignment and change leadership.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Solution Framework -->
+  <Steps
+    title="Our Proven Transformation Methodology"
+    subtitle="Two-Phase Journey to AI Excellence"
+    items={[
+      {
+        title: 'Phase 1: Leadership Foundation',
+        description: 'Unite Your Executive Team First. Convert sceptics into advocates through strategic workshops. Develop shared vision and strategic roadmap. Create governance structures for responsible adoption. Establish clear priorities, investment levels, and success indicators.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Phase 2: Team Empowerment',
+        description: 'Enable Your Teams to Create Their Own Solutions. Train teams to build AI assistants without programming. Develop role-specific automation. Emphasise enhancement over replacement. Foster organic adoption patterns.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Transformation Impact Section -->
+  <Features
+    title="Real-World Transformation Examples"
+    subtitle="Results vary based on implementation scope and organisational commitment"
+    items={[
+      {
+        title: 'Marketing & Creative Teams',
+        description: 'Transform content production from weekly cycles to daily outputs. Marketing becomes your competitive edge rather than your constraint.',
+        icon: 'tabler:palette',
+      },
+      {
+        title: 'People Operations',
+        description: 'HR professionals reclaim their strategic focus by automating routine processes. More meaningful employee engagement, less administrative burden.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Financial Operations',
+        description: 'Reporting cycles compress dramatically whilst maintaining accuracy. Finance teams balance professional and personal priorities effectively.',
+        icon: 'tabler:calculator',
+      },
+      {
+        title: 'Customer Experience',
+        description: 'Response times improve by orders of magnitude. Complex issues receive proper attention whilst routine queries resolve automatically.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+
+  <!-- Success Factors -->
+  <Features2
+    title="Why Our Approach Delivers Results"
+    items={[
+      {
+        title: 'Organisation Before Technology',
+        description: 'We establish readiness before implementation, ensuring genuine adoption.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Human-Centred Design',
+        description: 'Teams develop their own tools, creating ownership and expertise.',
+        icon: 'tabler:user-heart',
+      },
+      {
+        title: 'Clear Value Metrics',
+        description: 'Every engagement includes defined measurements and evaluation frameworks.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Risk Management',
+        description: 'Our governance approach prevents unauthorised AI use whilst safeguarding intellectual property.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Service Portfolio -->
+  <Content
+    isReversed
+    title="Select Your Transformation Approach"
+    items={[
+      {
+        title: 'Discovery Assessment',
+        description: 'Understand Your Potential. Comprehensive workflow evaluation. Resource allocation analysis. Organisational readiness review. Value projection modelling. Customised strategic blueprint. Investment: Complimentary with consultation.',
+      },
+      {
+        title: 'Executive Alignment Programme',
+        description: 'Build Your Foundation. Leadership team facilitation. Strategic vision development. Governance framework design. Success criteria definition. Change leadership planning. Investment: Tailored to scope.',
+      },
+      {
+        title: 'Complete Transformation',
+        description: 'End-to-End Implementation. Executive alignment. Team capability building. Custom solution development. Adoption facilitation. Impact validation. Investment: Bespoke proposal.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Team Collaboration',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Three Engagement Models</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Opportunity Cost Analysis -->
+  <Content
+    isAfterContent
+    title="The Price of Inaction"
+  >
+    <Fragment slot="content">
+      <p class="text-lg mb-4">While you deliberate:</p>
+      <ul class="list-disc list-inside space-y-2 mb-4">
+        <li>Competitors advance their capabilities</li>
+        <li>Unauthorised AI proliferates</li>
+        <li>Efficiency gaps compound</li>
+        <li>Talent seeks progressive employers</li>
+      </ul>
+      <p class="text-xl font-bold">
+        The Critical Question: Can your organisation afford to lag whilst others leap ahead?
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- FAQ Section -->
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'How does this differ from traditional consulting?',
+        description: 'We prioritise organisational alignment and capability building over tool selection. This ensures sustainable adoption and genuine results.',
+      },
+      {
+        title: 'We have already invested in AI tools. Can you help?',
+        description: 'Absolutely. We will align your leadership on optimal utilisation and enable your teams to extract maximum value.',
+      },
+      {
+        title: 'Is technical expertise required?',
+        description: 'No. Our methodology enables any professional to create AI solutions relevant to their work.',
+      },
+      {
+        title: 'When do results typically appear?',
+        description: 'Leadership alignment crystallises quickly. Team productivity improvements generally emerge during initial implementation phases.',
+      },
+      {
+        title: 'How do you work with IT departments?',
+        description: 'We complement technical expertise with organisational change leadership and business alignment.',
+      },
+    ]}
+  />
+
+  <!-- Call to Action Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule Assessment',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Book Consultation',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Start Programme',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Lead Your Industry's AI Evolution
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      AI will reshape your industry. The question is whether you'll pioneer that change or chase it.<br/><br/>
+
+      <strong>Option 1: Complimentary Assessment</strong> — Discover your AI potential without obligation<br/><br/>
+
+      <strong>Option 2: Executive Discussion</strong> — Explore how our methodology addresses your specific context<br/><br/>
+
+      <strong>Option 3: Leadership Programme</strong> — Unite your leadership around AI transformation
+    </Fragment>
+  </CallToAction>
+
+  <!-- Final Call to Action -->
+  <Content
+    isAfterContent
+    title="B2B Revenue Generation Has Changed Forever"
+  >
+    <Fragment slot="content">
+      <p class="text-lg mb-4">
+        AI will reshape your industry. The question is whether you'll pioneer that change or chase it.
+      </p>
+      <p class="text-center mt-6">
+        <a href="/contact" class="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-lg">
+          Begin Your AI Journey →
+        </a>
+      </p>
+    </Fragment>
+  </Content>
+</Layout>

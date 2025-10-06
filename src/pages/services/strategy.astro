@@ -1,0 +1,375 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'myGTMplan — One Page. One Team. One Clear Path to Revenue',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book Strategy Workshop',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'See Sample Plan',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      One Page. One Team. <span class="text-accent dark:text-white">One Clear Path to Revenue</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">The Strategic Planning System That Aligns Sales & Marketing</span><br/>
+      <span class="mt-4 block">
+        Stop drowning in 100-slide strategy decks nobody reads. myGTMplan creates a single-page Go-To-Market strategy that gets your entire revenue team focused on the right accounts, with the right tactics, measuring the right metrics.
+      </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="mt-4 text-sm">
+        <strong>Created by Patrick Rea FCIM | Endorsed Methodology</strong>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- The Problem Section -->
+  <Features
+    title="Why Most Go-To-Market Plans Fail"
+    subtitle="What if your entire revenue strategy fit on one page—and everyone actually used it?"
+    items={[
+      {
+        title: 'Complexity Paralysis',
+        description: '100+ page documents that nobody implements',
+        icon: 'tabler:file-x',
+      },
+      {
+        title: 'Misaligned Teams',
+        description: 'Sales and marketing pursuing different goals',
+        icon: 'tabler:arrows-split',
+      },
+      {
+        title: 'Vague Targeting',
+        description: '"Everyone" is your customer, so no one is',
+        icon: 'tabler:target-off',
+      },
+      {
+        title: 'No Clear Metrics',
+        description: 'Activity without accountability',
+        icon: 'tabler:chart-dots',
+      },
+    ]}
+  />
+
+  <!-- Solution Overview -->
+  <Content
+    title="Your Entire GTM Strategy. One Powerful Page."
+    items={[
+      {
+        title: 'Radical Simplicity',
+        description: 'Everything that matters on one page—no fluff, no confusion, just clarity',
+      },
+      {
+        title: 'Total Alignment',
+        description: 'Sales and marketing literally on the same page, with shared goals and metrics',
+      },
+      {
+        title: 'Immediate Action',
+        description: 'From strategy to execution, not endless planning paralysis',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Strategy Planning',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Three Core Principles</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- The myGTMplan Framework -->
+  <Steps
+    title="Five Steps to Revenue Clarity"
+    subtitle="Result: One page that drives every revenue decision"
+    items={[
+      {
+        title: 'Step 1: Goal Setting',
+        description: 'Align on what success looks like. Revenue targets by segment. Pipeline requirements. Sales velocity goals. Market share objectives.',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Step 2: Audience Identification',
+        description: 'Define exactly who buys. Ideal Customer Profile (ICP). Buying centres and personas. Decision-making process. Pain points and triggers.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Step 3: Insight Requirements',
+        description: 'Know what moves the needle. Market intelligence needs. Competitive positioning. Value proposition testing. Message-market fit.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Step 4: Resource Inventory',
+        description: 'Audit what you have, identify gaps. Content and collateral. Tools and technology. Skills and capabilities. Budget allocation.',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Step 5: Engagement Planning',
+        description: 'Create the playbook. Campaign calendar. Channel strategy. Sales plays. Success metrics.',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  />
+
+  <!-- Service Delivery Options -->
+  <Features2
+    title="Choose Your Path to Clarity"
+    items={[
+      {
+        title: 'Workshop Facilitation',
+        description: 'Interactive Sessions. We guide, you build. On-site or virtual facilitation. All stakeholders included. Real-time plan creation. Consensus building.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Consultative Development',
+        description: 'Collaborative Programme. We co-create together. Stakeholder interviews. Market analysis. Draft iterations. Final workshop.',
+        icon: 'tabler:users-plus',
+      },
+      {
+        title: 'Full Service Creation',
+        description: 'Complete Solution. We build, you approve. Comprehensive research. Strategy development. Plan creation. Implementation roadmap.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- The Power of One Page -->
+  <Features
+    title="Why Single-Page Strategy Works"
+    items={[
+      {
+        title: 'Forced Prioritisation',
+        description: 'Limited space means only what truly matters makes the cut—no hiding behind complexity',
+        icon: 'tabler:filter',
+      },
+      {
+        title: 'Universal Understanding',
+        description: 'Everyone from CEO to SDR can understand and act on the plan immediately',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Visible Accountability',
+        description: 'Every commitment, metric, and owner is visible to all—nowhere to hide',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Living Document',
+        description: 'Easy to update quarterly without massive replanning efforts',
+        icon: 'tabler:refresh',
+      },
+    ]}
+  />
+
+  <!-- Perfect For Section -->
+  <Content
+    isReversed
+    title="Ideal for B2B Teams Who..."
+    image={{
+      src: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'B2B Team Collaboration',
+    }}
+  >
+    <Fragment slot="content">
+      <ul class="list-none space-y-2">
+        <li>✓ Sell complex solutions requiring sales-marketing alignment</li>
+        <li>✓ Target specific accounts or segments (ABM approach)</li>
+        <li>✓ Have extended sales cycles with multiple stakeholders</li>
+        <li>✓ Need to coordinate multiple channels and touchpoints</li>
+        <li>✓ Want measurable marketing outcomes</li>
+        <li>✓ Are scaling from founder-led to process-led sales</li>
+        <li>✓ Face intense competition for enterprise accounts</li>
+        <li>✓ Must align distributed or remote revenue teams</li>
+      </ul>
+      <p class="mt-4"><strong>Not sure if this fits?</strong> <a href="/contact" class="text-accent underline">Let's discuss your situation</a></p>
+    </Fragment>
+  </Content>
+
+  <!-- Workshop Experience -->
+  <Steps
+    title="What Happens in a myGTMplan Workshop"
+    subtitle="Output: Your completed one-page plan, ready for immediate execution"
+    items={[
+      {
+        title: 'Session 1: Discovery & Alignment',
+        description: 'Market Reality Check: Competitive landscape mapping, customer insight synthesis, win/loss analysis, opportunity sizing. Strategy Formation: ICP definition, value proposition development, differentiation strategy, channel selection.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Session 2: Planning & Commitment',
+        description: 'Tactical Planning: Campaign architecture, content requirements, resource allocation, execution roadmap. Finalisation: Metric definition, owner assignment, review cadence, launch planning.',
+        icon: 'tabler:list-check',
+      },
+    ]}
+  />
+
+  <!-- Key Components Display -->
+  <Features
+    title="What Your One-Page Plan Contains"
+    items={[
+      {
+        title: 'Sales Targets',
+        description: 'Clear revenue goals broken down by segment, product, and timeline',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Buyer Personas',
+        description: 'Documented understanding of who buys, why they buy, and how they decide',
+        icon: 'tabler:user-search',
+      },
+      {
+        title: 'Value Proposition',
+        description: 'Your differentiation clearly articulated for internal and external use',
+        icon: 'tabler:diamond',
+      },
+      {
+        title: 'Channel Strategy',
+        description: 'Which channels to use, when, and how they work together',
+        icon: 'tabler:device-analytics',
+      },
+      {
+        title: 'Sales Process',
+        description: 'Defined stages from awareness through to closed-won',
+        icon: 'tabler:timeline',
+      },
+      {
+        title: 'Marketing Calendar',
+        description: 'Campaign timing aligned with sales goals and market dynamics',
+        icon: 'tabler:calendar-event',
+      },
+      {
+        title: 'Metrics Framework',
+        description: 'Leading and lagging indicators that predict success',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Resource Allocation',
+        description: 'Who does what, when, with what tools and budget',
+        icon: 'tabler:users',
+      },
+    ]}
+  />
+
+  <!-- Facilitator Profile -->
+  <Content
+    id="facilitator"
+    title="Led by GTM Authority Patrick Rea FCIM"
+    items={[
+      {
+        title: 'Unique Qualifications',
+        description: 'Created the myGTMplan methodology. B2B strategy specialist. CIM ABM Course Director. Active practitioner, not just theorist.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Strategy Facilitation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expert Facilitation</h3>
+      <p class="text-lg italic">"I don't tell you your strategy—I help you uncover it. The best plans come from within your team, with expert guidance to get there efficiently."</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- FAQ Section -->
+  <FAQs
+    title="Common Questions"
+    items={[
+      {
+        title: 'How is this different from traditional strategic planning?',
+        description: 'Traditional planning creates lengthy documents that sit on shelves. myGTMplan creates a living, actionable one-page strategy that teams actually use daily.',
+      },
+      {
+        title: 'Who should attend the workshop?',
+        description: 'Key revenue team members: sales leadership, marketing leadership, operations, and ideally executive sponsors. Typically 6-15 people.',
+      },
+      {
+        title: 'What if we already have a strategy?',
+        description: 'Perfect. We\'ll help distill it into an actionable one-page format and ensure everyone is truly aligned on execution.',
+      },
+      {
+        title: 'Can we do this virtually?',
+        description: 'Yes. We offer both in-person and virtual facilitation with interactive tools that work brilliantly remotely.',
+      },
+      {
+        title: 'How often should we update the plan?',
+        description: 'Quarterly reviews keep the plan fresh. The one-page format makes updates quick and painless.',
+      },
+      {
+        title: 'What happens after the workshop?',
+        description: 'You receive the final plan, supporting materials, implementation tools, and ongoing support for execution.',
+      },
+    ]}
+  />
+
+  <!-- Getting Started Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Reserve Your Session',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Sample Plan',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Book Discussion',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Stop Planning. Start Executing.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Your team needs direction. Your market won't wait. Your strategy should enable action, not create confusion.<br/><br/>
+
+      <strong>The Promise:</strong> Transform confusion into clarity, conflict into alignment, and planning into execution.<br/><br/>
+
+      <strong>Option 1:</strong> Book your workshop and transform your revenue strategy<br/>
+      <strong>Option 2:</strong> See a sample plan to understand the format<br/>
+      <strong>Option 3:</strong> Quick consultation to discuss your specific needs
+    </Fragment>
+  </CallToAction>
+</Layout>
