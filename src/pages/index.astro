@@ -2,136 +2,144 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'ABM+AI Solutions — Transform Your B2B Revenue Engine',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
+  <!-- Hero Section -->
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'See How AI Changes ABM',
+        href: '#features',
       },
-      { text: 'Learn more', href: '#features' },
+      {
+        text: 'Get Free Account Analysis',
+        href: '/contact',
+        variant: 'secondary'
+      },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Where ABM Meets AI: <span class="text-accent dark:text-white">Intelligence, Training & Strategy</span> in Perfect Alignment
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <div class="space-y-6 mb-2">
+        <p class="font-semibold text-xl">Transform Your B2B Revenue Engine With AI-Powered ABM</p>
+        <p class="text-lg">
+          Traditional ABM doesn't work for many companies—too slow, too manual, too expensive. We've rebuilt Account-Based Marketing for the AI era. From intelligent prospect research to automated outreach to strategic planning, we help B2B teams achieve unprecedented efficiency and results.
+        </p>
+        <p class="text-sm font-semibold mt-8 pt-4 pb-4 border-t border-gray-300 dark:border-gray-700">
+          Led by Patrick Rea FCIM | CIM ABM Course Director | 300+ Enterprises Transformed
+        </p>
+      </div>
     </Fragment>
+
   </Hero>
 
-  <!-- Note Widget ******************* -->
-
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
-
-  <!-- Features Widget *************** -->
-
+  <!-- The New Reality Section -->
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="ABM Has Changed"
+    title="Have You?"
+    subtitle="The companies winning today aren't working harder—they're working smarter with AI-enhanced ABM"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        title: 'From Manual to Intelligent',
+        description: 'Yesterday: Weeks of manual research per account. Today: AI-powered intelligence in hours',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+        title: 'From Generic to Personalised',
+        description: 'Yesterday: Same message to every stakeholder. Today: AI-crafted messages for each role',
+        icon: 'tabler:messages',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+        title: 'From Complex to Clear',
+        description: 'Yesterday: 100-page strategies gathering dust. Today: One-page plans driving action',
+        icon: 'tabler:file-check',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-50/20 via-blue-50/40 to-blue-50/20 dark:from-slate-800/10 dark:via-slate-800/20 dark:to-slate-800/10"></div>
+    </Fragment>
+  </Features>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+  <!-- Core Offering Section -->
+  <Features
+    title="The Complete ABM+AI Ecosystem"
+    subtitle="Start anywhere. Better together."
+    columns={2}
     items={[
       {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+        title: 'AI Intelligence & Outreach',
+        description: 'Turn Targets Into Meetings. Map 6-12 stakeholders per account, craft personalised messages with AI, execute multi-channel outreach, deliver qualified meetings.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+        title: 'ABM+AI Training',
+        description: 'Build Internal Capability. Certified ABM methodology, hands-on AI tool training, custom workshops for your team, ongoing implementation support.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+        title: 'Strategic GTM Planning',
+        description: 'Align Your Revenue Engine. Create one-page GTM strategy, align sales and marketing, define clear metrics and ownership, enable immediate execution.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'AI Transformation',
+        description: 'Unite Leadership, Empower Teams. Align C-suite on AI strategy, enable teams to build AI solutions, eliminate shadow AI risks, deliver measurable productivity gains.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features>
+
+  <!-- The ABM+AI Advantage -->
+  <Content
+    id="advantage"
+    title="Why AI Changes Everything in ABM"
+    items={[
+      {
+        title: 'Intelligent Research at Scale',
+        description: 'AI analyses hundreds of sources simultaneously, pattern recognition across accounts, real-time trigger identification, predictive opportunity scoring.',
+      },
+      {
+        title: 'Hyper-Personalisation',
+        description: 'Role-specific message generation, industry context integration, personality-matched communication, dynamic content creation.',
+      },
+      {
+        title: 'Automated Orchestration',
+        description: 'Multi-channel campaign execution, response handling and routing, meeting scheduling automation, performance optimisation.',
+      },
+      {
+        title: 'Continuous Learning',
+        description: 'Message effectiveness tracking, response pattern analysis, strategy refinement, predictive improvements.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Technology',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Game-Changing Capabilities</h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -139,261 +147,210 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
+  <!-- Integration Visual -->
+  <Steps
+    title="How Our Services Work Together"
+    subtitle="Multiple Paths to ABM Excellence"
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Start Anywhere',
+        description: 'Need Leads Now? → Intelligence & Outreach → Immediate meetings. Want Skills? → ABM Training → Build capability. Need Strategy? → myGTMplan → Clear direction. Need enterprise AI adoption? → AI Transformation → Aligned organisation.',
+        icon: 'tabler:point',
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Better Together',
+        description: 'Intelligence informs Strategy. Strategy guides Training. Training enhances Intelligence. All powered by AI.',
+        icon: 'tabler:link',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+  />
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <!-- Choose Your Starting Point -->
+  <Features
+    id="paths"
+    title="Multiple Paths to ABM Excellence"
+    items={[
+      {
+        title: 'Quick Win Path',
+        description: 'We need meetings this quarter. Free account intelligence sample. See our quality immediately. Scale what works.',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: 'Capability Path',
+        description: 'We need to level up our team. ABM+AI workshop. Public or in-house options. Immediate implementation.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Strategic Path',
+        description: 'We need alignment first. myGTMplan workshop. Create your one-page strategy. Unite your revenue team.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Transformation Path',
+        description: 'We need enterprise-wide AI adoption. Leadership alignment first. Department-by-department rollout. Measurable productivity gains.',
+        icon: 'tabler:transform',
+      },
+    ]}
+  />
 
-  <!-- Content Widget **************** -->
-
+  <!-- AI Tools Showcase -->
   <Content
     isReversed
-    isAfterContent
+    title="The AI Stack That Powers Modern ABM"
     items={[
       {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+        title: 'Research & Intelligence',
+        description: 'ChatGPT/Claude | Perplexity | Apollo | LinkedIn Sales Navigator',
       },
       {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+        title: 'Content & Messaging',
+        description: 'AI copywriting | Dynamic personalisation | A/B testing automation',
       },
       {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+        title: 'Outreach & Engagement',
+        description: 'LinkedIn automation | Email sequencing | Response handling',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Analysis & Optimisation',
+        description: 'Predictive scoring | Intent monitoring | Performance analytics',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Tools',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Master the Tools</h3>
+      We don't just use these tools—we teach you to master them
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+  <!-- Authority Section -->
+  <Content
+    id="authority"
+    isAfterContent
+    title="Learn from ABM+AI Leadership"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        title: 'Unique Position',
+        description: "CIM's ABM Course Director. Team leader in integrating AI into ABM methodology. Active practitioner running campaigns daily. 25+ years B2B marketing excellence.",
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Current Innovation',
+        description: 'Developing ABM AI Engineering frameworks. Creating next-generation prospecting systems. Building AI-powered GTM strategies. Training enterprise teams globally.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Patrick Rea',
     }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
   >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patrick Rea FCIM</h3>
+      <p class="text-lg italic">"ABM without AI is like navigation without GPS—possible, but unnecessarily difficult. We're not just adopting AI; we're reimagining ABM from the ground up."</p>
     </Fragment>
-  </Features2>
+  </Content>
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+  <!-- Results Section -->
+  <Testimonials
+    id="results"
+    title="What Success Looks Like"
+    testimonials={[
+      {
+        testimonial: 'From endless research to qualified meetings flowing weekly',
+        name: 'Intelligence Client',
+        job: '',
+      },
+      {
+        testimonial: 'Our team now operates like an ABM centre of excellence',
+        name: 'Training Graduate',
+        job: '',
+      },
+      {
+        testimonial: 'Finally, sales and marketing working from the same playbook',
+        name: 'Strategy Workshop Participant',
+        job: '',
+      },
+    ]}
   />
 
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
+  <!-- Resources Section -->
+  <Features
+    id="resources"
+    title="Free ABM+AI Resources"
     items={[
       {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+        title: 'ABM+AI Playbook',
+        description: 'Complete guide to modern ABM',
+        icon: 'tabler:book',
       },
       {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+        title: 'AI Tool Templates',
+        description: 'Prompts and frameworks',
+        icon: 'tabler:template',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+        title: 'Assessment Tools',
+        description: 'ABM maturity calculator',
+        icon: 'tabler:calculator',
       },
       {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+        title: 'Weekly Insights',
+        description: 'Latest ABM+AI strategies',
+        icon: 'tabler:mail',
       },
     ]}
   />
 
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
+  <!-- Call to Action Section -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
+        text: 'Request Free Analysis',
+        href: '/contact',
         icon: 'tabler:download',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Training',
+        href: '/services/training',
+      },
+      {
+        variant: 'secondary',
+        text: 'Schedule Workshop',
+        href: '/contact',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      The Future of ABM is Here.<br/>Don't Get Left Behind.
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      <strong>See It In Action:</strong> Free Account Analysis. Send us any target company. We'll show you what AI-powered intelligence looks like.<br/><br/>
+      <strong>Learn The Methods:</strong> Explore Training Options. Public courses or private workshops. Master ABM+AI with expert guidance.<br/><br/>
+      <strong>Get Strategic:</strong> Book Planning Session. Create your one-page GTM strategy. Align your entire revenue team.
     </Fragment>
   </CallToAction>
+
+  <!-- Final Statement -->
+  <Content
+    isAfterContent
+    title="B2B Revenue Generation Has Changed Forever"
+    image={{
+      src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Future of B2B Revenue',
+    }}
+  >
+    <Fragment slot="content">
+      <p class="text-lg mb-4">
+        Companies still doing manual account research, generic outreach, and complex planning will lose to those embracing AI-enhanced ABM. The question isn't whether to adopt these approaches, but how quickly you can implement them.
+      </p>
+      <p class="text-xl font-bold">
+        The Choice Is Clear: Continue struggling with traditional ABM, or embrace the AI revolution that's transforming B2B revenue generation.
+      </p>
+    </Fragment>
+  </Content>
 </Layout>

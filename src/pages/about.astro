@@ -1,228 +1,204 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
 const metadata = {
-  title: 'About us',
+  title: 'About — Patrick Rea FCIM & ABM+AI Solutions',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    tagline="About us"
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
-    }}
-  >
+  <!-- Hero Section -->
+  <Hero>
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
+      About <span class="text-accent dark:text-white">ABM+AI Solutions</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Led by Patrick Rea FCIM, we're reimagining Account-Based Marketing for the AI era. Combining proven methodology with cutting-edge technology to deliver unprecedented results for B2B teams.
     </Fragment>
   </Hero>
 
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
+  <!-- Patrick Rea Profile -->
+  <Content
+    isReversed
+    title="Patrick Rea FCIM"
     items={[
       {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+        title: 'CIM ABM Course Director',
+        description: 'Course Director for the Chartered Institute of Marketing\'s ABM programme, training B2B marketing professionals globally.',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+        title: '25+ Years B2B Excellence',
+        description: 'Quarter century of B2B marketing leadership across enterprise technology, SaaS, and professional services sectors.',
       },
       {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
-      },
-    ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+        title: '300+ Enterprises Transformed',
+        description: 'Trained and consulted with leading organisations including Basware, Global Knowledge, and Serena Software.',
       },
       {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+        title: 'Active Practitioner',
+        description: 'Not just teaching theory—actively running ABM+AI campaigns daily, staying at the forefront of what works now.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Patrick Rea FCIM',
     }}
-  />
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">CIM ABM Course Director & B2B Innovation Leader</h3>
+      <p class="text-lg italic mb-4">
+        "ABM without AI is like navigation without GPS—possible, but unnecessarily difficult. We're not just adopting AI; we're reimagining ABM from the ground up."
+      </p>
+    </Fragment>
 
-  <!-- Steps2 Widget ****************** -->
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+  <!-- Current Innovation -->
+  <Features
+    id="innovation"
+    title="Current Innovation & Focus"
     items={[
       {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+        title: 'ABM AI Engineering',
+        description: 'Developing frameworks that combine ABM methodology with AI capabilities for next-generation prospecting and engagement.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+        title: 'AI-Powered GTM Strategies',
+        description: 'Creating strategic planning systems that leverage AI for market intelligence, competitive analysis, and execution planning.',
+        icon: 'tabler:chart-dots',
       },
       {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        title: 'Enterprise Team Training',
+        description: 'Training B2B teams globally to master the intersection of Account-Based Marketing and artificial intelligence.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Methodology Development',
+        description: 'Publishing frameworks and approaches that enable teams to adopt AI-enhanced ABM systematically and successfully.',
+        icon: 'tabler:books',
       },
     ]}
   />
 
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
+  <!-- Our Philosophy -->
+  <Content
+    isReversed
+    title="Our Philosophy"
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Team Strategy Session',
     }}
+  >
+    <Fragment slot="content">
+      <div class="space-y-6 py-8">
+        <p class="text-lg leading-relaxed">
+          <strong>ABM is fundamentally changing.</strong> The manual research, generic messaging, and complex planning that defined traditional ABM no longer work at the speed and scale modern B2B requires.
+        </p>
+        <p class="text-lg leading-relaxed">
+          <strong>AI isn't replacing ABM—it's unlocking its full potential.</strong> By automating the time-consuming research and execution tasks, AI allows teams to focus on strategic thinking, relationship building, and delivering genuine value to target accounts.
+        </p>
+        <p class="text-lg leading-relaxed">
+          <strong>But technology alone isn't the answer.</strong> Successful ABM+AI requires the right combination of methodology, tools, training, and strategic alignment. That's why we offer a complete ecosystem—from done-for-you services to team training to strategic planning support.
+        </p>
+        <p class="text-xl font-bold mt-8 text-accent dark:text-white">
+          Our mission: Help B2B teams adopt AI-enhanced ABM faster, more effectively, and with better results than they could achieve alone.
+        </p>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Our Methodology -->
+  <Steps
+    title="Our Methodology"
+    subtitle="How we help teams succeed with ABM+AI"
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'Proven ABM Foundation',
+        description: 'Start with CIM-endorsed ABM methodology that has trained thousands of professionals. Ensure teams understand the strategic principles before adding technology.',
+        icon: 'tabler:building-fortress',
       },
       {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+        title: 'AI Enhancement Layer',
+        description: 'Layer in AI tools systematically—for research, messaging, orchestration, and optimisation. Focus on practical application, not technology for its own sake.',
+        icon: 'tabler:layers-intersect',
       },
       {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+        title: 'Hands-On Implementation',
+        description: 'Whether through done-for-you services, training workshops, or strategic consulting, ensure teams can immediately apply what they learn.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Continuous Improvement',
+        description: 'Measure results, refine approaches, and stay current with evolving AI capabilities and ABM best practices.',
+        icon: 'tabler:refresh',
       },
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
+  <!-- Client Success -->
+  <Content
+    isReversed
+    title="Client Success Stories"
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'Enterprise Technology Leader',
+        description: 'Transformed pipeline generation with AI-powered account intelligence, moving from weeks of manual research to qualified meetings in days.',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'B2B SaaS Scale-Up',
+        description: 'Entire marketing team trained in ABM+AI methodology, establishing internal centre of excellence and dramatically improving sales-marketing alignment.',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Professional Services Firm',
+        description: 'Created single-page GTM strategy using myGTMplan methodology, aligning partners and team around clear account targeting and engagement approach.',
       },
     ]}
-  />
+    image={{
+      src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Client Success',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trusted by Leading B2B Teams</h3>
+    </Fragment>
+  </Content>
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
       {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+        variant: 'primary',
+        text: 'Start Your ABM+AI Journey',
+        href: '/contact',
       },
       {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+        variant: 'secondary',
+        text: 'Explore Services',
+        href: '/#features',
       },
     ]}
-  />
+  >
+    <Fragment slot="title">
+      Ready to Transform Your B2B Revenue Engine?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Whether you need qualified meetings now, want to train your team, or require strategic alignment, we have a solution that fits.
+    </Fragment>
+  </CallToAction>
 </Layout>

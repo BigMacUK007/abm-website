@@ -1,0 +1,327 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'ABM AI Accelerator Training — Transform Your Team Into Experts',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book In-House Training',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Download Course Outline',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Transform Your Team Into <span class="text-accent dark:text-white">ABM AI-Accelerated Experts</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">Customised In-House Workshops That Build Real Capability, Not Just Theory</span><br/>
+      <span class="mt-4 block">
+        Bring the CIM's highest-rated ABM training directly to your team. Led by Patrick Rea FCIM, Course Director for CIM's open ABM programme, these tailored workshops combine proven ABM methodology with cutting-edge AI tools to create immediate, measurable impact.
+      </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="mt-4 text-sm">
+        <strong>CIM ABM Course Director | 300+ Enterprises Trained | 25 Years B2B Excellence</strong>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- Training Options Section -->
+  <Features2
+    title="Choose Your Training Path"
+    items={[
+      {
+        title: 'Public Training',
+        description: 'Join Our Open CIM Course. Next dates monthly. Central London location. Mix with other professionals. CIM certification included.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'In-House Training [FEATURED]',
+        description: 'Exclusive to Your Team. Customised to your industry. Your location or virtual. Confidential discussion of accounts. Team alignment workshop. For up to 12 people.',
+        icon: 'tabler:home',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Core Programme Overview -->
+  <Content
+    id="curriculum"
+    title="The Complete ABM+AI Curriculum"
+    items={[
+      {
+        title: 'Morning: ABM Strategy & Planning',
+        description: 'Understanding modern ABM value and impact. Setting targets and KPIs that matter. Aligning sales and marketing with buyer requirements. Developing your ideal customer profile. Account selection and prioritisation.',
+      },
+      {
+        title: 'Afternoon: ABM Execution with AI',
+        description: 'AI-powered stakeholder mapping. Personalised messaging at scale. Multi-channel orchestration. Lead qualification and nurturing. Technology stack integration.',
+      },
+      {
+        title: 'Follow-Up: Implementation Support',
+        description: '30-day email support. Template library access. Monthly virtual Q&A sessions. Progress review call.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Training Workshop',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Foundation Day Programme</h3>
+    </Fragment>
+  </Content>
+
+  <!-- In-House Advantage Section -->
+  <Features
+    title="Why Leading Teams Choose In-House Training"
+    items={[
+      {
+        title: 'Confidential Account Work',
+        description: 'Work on YOUR actual accounts, discuss YOUR pipeline, plan YOUR campaigns—impossible in public courses',
+        icon: 'tabler:lock',
+      },
+      {
+        title: 'Team Alignment',
+        description: 'Get sales, marketing, and leadership in one room, speaking one language, pursuing one strategy',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Industry Customisation',
+        description: 'Examples, exercises, and strategies specific to your sector, buyers, and competitive landscape',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'AI Tool Integration',
+        description: 'Learn to use AI tools with YOUR data, YOUR messages, YOUR brand voice—not generic examples',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Immediate Application',
+        description: 'Leave with actual campaigns ready to launch, not just theoretical knowledge',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Cost Effective',
+        description: 'Train 12 people for the price of sending 4 to public courses, plus save travel time and costs',
+        icon: 'tabler:coin',
+      },
+    ]}
+  />
+
+  <!-- Curriculum Deep Dive -->
+  <Steps
+    title="What Your Team Will Master"
+    items={[
+      {
+        title: 'Module 1: ABM Foundations',
+        description: 'ABM vs traditional marketing. One-to-one, one-to-few, one-to-many models. Building your ABM business case. Quick wins to prove value.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Module 2: Account Intelligence with AI',
+        description: 'LinkedIn Sales Navigator mastery. AI research tools and automation. Building account dossiers. Trigger event monitoring.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Module 3: Stakeholder Engagement',
+        description: 'Mapping buying committees. Role-based messaging. Multi-threading strategies. Executive engagement tactics.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Module 4: Campaign Orchestration',
+        description: 'Content personalisation at scale. LinkedIn outreach automation. Email sequence optimization. Direct mail integration.',
+        icon: 'tabler:send',
+      },
+      {
+        title: 'Module 5: Sales Alignment',
+        description: 'SLA development. Handoff protocols. Feedback loops. Joint planning sessions.',
+        icon: 'tabler:git-merge',
+      },
+      {
+        title: 'Module 6: Measurement & Optimisation',
+        description: 'ABM-specific metrics. Attribution models. ROI calculation. Continuous improvement.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+  />
+
+  <!-- AI Integration Focus -->
+  <Content
+    isReversed
+    title="ABM+AI: The Competitive Edge"
+    items={[
+      {
+        title: 'Research & Intelligence',
+        description: 'ChatGPT/Claude for account research. Perplexity for real-time insights. Apollo/Cognism for contact enrichment. Crystal Knows for personality insights.',
+      },
+      {
+        title: 'Content & Messaging',
+        description: 'AI message personalisation. Dynamic content creation. A/B testing automation. Response prediction.',
+      },
+      {
+        title: 'Automation & Scale',
+        description: 'Workflow automation. Trigger-based campaigns. Predictive scoring. Intent monitoring.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AI Tools',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hands-On AI Practice</h3>
+      Your team will leave knowing exactly how to use these tools for YOUR accounts
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Trainer Profile -->
+  <Content
+    id="trainer"
+    isAfterContent
+    title="Learn from the Authority"
+    items={[
+      {
+        title: 'Credentials',
+        description: 'Course Director for CIM\'s open ABM programme. 25+ years B2B marketing excellence. Trained 300+ enterprise teams including Basware, Global Knowledge, Serena Software. Published ABM methodologies and frameworks. Pioneer in ABM+AI integration.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Patrick Rea',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patrick Rea FCIM</h3>
+      <p class="text-sm italic mb-2">CIM ABM Course Director & B2B Innovation Leader</p>
+      <p class="text-lg italic">"I don't just teach ABM theory—I'm actively running ABM campaigns with AI for clients daily. Your team learns what's working NOW, not what worked five years ago."</p>
+    </Fragment>
+  </Content>
+
+  <!-- Results & Outcomes -->
+  <Steps
+    title="What Success Looks Like"
+    items={[
+      {
+        title: 'Immediate Outcomes (Week 1)',
+        description: 'Team aligned on ABM strategy. Target account list defined. First campaigns planned. AI tools implemented.',
+        icon: 'tabler:calendar-week',
+      },
+      {
+        title: '30-Day Outcomes',
+        description: 'Stakeholder maps completed. Outreach campaigns live. Early engagement metrics. Process refinements made.',
+        icon: 'tabler:calendar-month',
+      },
+      {
+        title: '90-Day Outcomes',
+        description: 'Pipeline velocity increased. Meeting quality improved. Sales-marketing alignment strong. ROI clearly demonstrated.',
+        icon: 'tabler:calendar-stats',
+      },
+    ]}
+  />
+
+  <!-- FAQs Section -->
+  <FAQs
+    title="Common Questions"
+    items={[
+      {
+        title: 'How is in-house different from public training?',
+        description: 'In-house training is customised to your industry, uses your actual accounts, and aligns your entire team. Public training mixes participants from different companies and industries with generic examples.',
+      },
+      {
+        title: 'Can we focus on specific industries/sectors?',
+        description: 'Absolutely. We tailor all examples, exercises, and case studies to your specific industry and competitive landscape.',
+      },
+      {
+        title: 'Do you provide ongoing support?',
+        description: 'Yes. All programmes include 30-day email support, template library access, and optional ongoing coaching packages.',
+      },
+      {
+        title: 'What AI tools do you cover?',
+        description: 'We cover ChatGPT/Claude, Perplexity, LinkedIn Sales Navigator, Apollo, and various automation tools. The focus is on practical application for ABM.',
+      },
+      {
+        title: 'Can we split the training across multiple days?',
+        description: 'Yes. We offer single intensive days, two half-days, weekly 2-hour sessions, or fully virtual formats.',
+      },
+      {
+        title: 'Is certification included?',
+        description: 'Certificates of completion are provided. CIM certification is available through the public course.',
+      },
+    ]}
+  />
+
+  <!-- Call to Action Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule Consultation',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Public Dates',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'Get Training Pack',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Transform Your ABM Capability?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <strong>Option 1: Book In-House Training</strong> — Start with a 30-minute discovery call. Get customised proposal. Secure your dates.<br/><br/>
+
+      <strong>Option 2: Try Public Course First</strong> — Send 1-2 team members. Experience the content. Decide on in-house.<br/><br/>
+
+      <strong>Option 3: Download Information</strong> — Detailed curriculum. Pricing options. Case studies to share with your team.
+    </Fragment>
+  </CallToAction>
+
+  <!-- Bottom Trust Banner -->
+  <Content
+    isAfterContent
+    title="Join 300+ Enterprise Teams"
+  >
+    <Fragment slot="content">
+      <p class="text-center text-lg">
+        who've transformed their ABM performance through our training
+      </p>
+    </Fragment>
+  </Content>
+</Layout>
