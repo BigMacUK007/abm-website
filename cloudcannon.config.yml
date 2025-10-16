@@ -1,0 +1,25 @@
+source: /src/
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: true
+  data_post:
+    path: data/post
+    name: Data Post
+    icon: data_alert
+    disable_url: true
+  pages_1:
+    path: pages
+    name: Pages 1
+    icon: pages
+    disable_url: true
+paths:
+  static: public
+  uploads: public/uploads
+timezone: Europe/London
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
