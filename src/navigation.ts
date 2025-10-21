@@ -15,7 +15,7 @@ export const headerData = {
         },
         {
           text: 'myGTMplan Strategy',
-          href: getPermalink('/services/strategy'),
+          href: getPermalink('/myGTMplan'),
         },
         {
           text: 'AI Transformation',
@@ -48,7 +48,7 @@ export const footerData = {
       links: [
         { text: 'AI Intelligence & Outreach', href: getPermalink('/services/intelligence') },
         { text: 'ABM+AI Training', href: getPermalink('/services/training') },
-        { text: 'myGTMplan Strategy', href: getPermalink('/services/strategy') },
+        { text: 'myGTMplan Strategy', href: getPermalink('/myGTMplan') },
         { text: 'AI Transformation', href: getPermalink('/services/transformation') },
       ],
     },
