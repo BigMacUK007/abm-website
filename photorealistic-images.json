@@ -1,0 +1,79 @@
+[
+  {
+    "file": "src/pages/index.astro",
+    "line": 148,
+    "alt": "AI Technology",
+    "section": "Why AI Changes Everything in ABM - Game-Changing Capabilities",
+    "prompt": "Photorealistic scene of a diverse team of business professionals in a modern tech office, gathered around a large interactive holographic display showing AI neural networks and data visualizations, ambient natural lighting from floor-to-ceiling windows, professional corporate attire, focused expressions of innovation and collaboration, ultra-sharp detail, cinematic composition, shallow depth of field, 8K quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/elephant/PuUOk6Y4c3Bv4j-uunesd.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/panda/qppSxoJQp0dn9JOw_n4Xj_ComfyUI_temp_hmkjx_00015_.png",
+    "filename": "why-ai-changes-everything-in-abm-game-changing-capabilities.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/index.astro",
+    "line": 230,
+    "alt": "AI Tools",
+    "section": "The AI Stack That Powers Modern ABM - Master the Tools",
+    "prompt": "Photorealistic close-up of a marketing professional's hands working on a sleek laptop with multiple AI tool interfaces visible on screen, modern minimalist workspace with secondary monitor showing data dashboards, soft natural window light, professional business casual attire, clean desk setup with coffee cup, ultra-sharp focus on screens and hands, cinematic quality, 8K detail",
+    "generatedUrl": "https://v3b.fal.media/files/b/monkey/fOrvOBc-AaFgPjm98f5Yz.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/koala/7iMb3myFK8PZ39sqtYruy_ComfyUI_temp_otapo_00020_.png",
+    "filename": "the-ai-stack-that-powers-modern-abm-master-the-tools.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/index.astro",
+    "line": 256,
+    "alt": "Patrick Rea",
+    "section": "Authority Section - ABM Prospector Leadership",
+    "prompt": "Photorealistic portrait of a confident senior business professional (male, 50s, business attire) standing in a modern corporate training room or conference space, arms crossed with approachable smile, background shows presentation screens with ABM frameworks and charts slightly out of focus, professional lighting, authority and expertise conveyed through posture and environment, ultra-sharp portrait detail, 8K quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/elephant/EPyZi2udvr75HNKUBjXO4.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/zebra/HejB0Z_exHceVrcZzDFIa_ComfyUI_temp_gdqzt_00004_.png",
+    "filename": "authority-section-abm-prospector-leadership.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/index.astro",
+    "line": 354,
+    "alt": "Future of B2B Revenue",
+    "section": "B2B Revenue Generation Has Changed Forever",
+    "prompt": "Photorealistic wide shot of a modern B2B sales team celebrating success in a contemporary office, diverse group of professionals looking at large screen showing positive growth metrics and revenue dashboards, natural expressions of achievement and optimism, floor-to-ceiling windows showing city skyline, professional attire, golden hour lighting, cinematic composition, 8K quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/rabbit/Tb693DUyulUPLKH2_YdN5.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/lion/iuQtQd6Jy_KTrjj71c9Ec_ComfyUI_temp_otapo_00023_.png",
+    "filename": "b2b-revenue-generation-has-changed-forever.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/about.astro",
+    "line": 50,
+    "alt": "Patrick Rea FCIM",
+    "section": "Patrick Rea Profile - CIM ABM Course Director",
+    "prompt": "Photorealistic professional headshot-style portrait of a distinguished business leader (male, 50s, professional business attire with FCIM designation context), confident and approachable expression, seated at modern executive desk or standing by office window with subtle corporate background, professional studio-quality lighting, ultra-sharp facial detail showing expertise and experience, 8K portrait quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/lion/Tn4nA7zHUdpIugV0GIwUi.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/koala/qg9afQpizZYGXjVAO2kTG_ComfyUI_temp_otapo_00025_.png",
+    "filename": "patrick-rea-profile-cim-abm-course-director.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/about.astro",
+    "line": 99,
+    "alt": "Team Strategy Session",
+    "section": "Our Philosophy - ABM Transformation",
+    "prompt": "Photorealistic scene of a diverse B2B marketing team engaged in collaborative strategy session around a modern conference table, laptops and tablets visible, whiteboard with frameworks and strategy diagrams in background, engaged facial expressions and body language showing teamwork, natural office lighting, professional business casual attire, ultra-sharp detail, cinematic composition, 8K quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/koala/dDVozwrkO7X-dvGpN07Tn.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/elephant/9WYN6qFm8QR7b3A-3oIbo_ComfyUI_temp_gdqzt_00011_.png",
+    "filename": "our-philosophy-abm-transformation.webp",
+    "dimensions": "3584x3584"
+  },
+  {
+    "file": "src/pages/about.astro",
+    "line": 172,
+    "alt": "Client Success",
+    "section": "Client Success Stories - Trusted by Leading B2B Teams",
+    "prompt": "Photorealistic scene of a client meeting or handshake moment between business professionals, diverse team members showing satisfaction and trust, modern corporate meeting room with sleek design, natural expressions of success and partnership, professional business attire, ambient natural lighting, background shows subtle success metrics on screens, ultra-sharp detail, 8K cinematic quality",
+    "generatedUrl": "https://v3b.fal.media/files/b/zebra/D_rSAXc9NYT0qEPxgkhv7.jpg",
+    "upscaledUrl": "https://v3b.fal.media/files/b/kangaroo/z4N5xWx1E9A9CoQOrUvNo_ComfyUI_temp_gdqzt_00014_.png",
+    "filename": "client-success-stories-trusted-by-leading-b2b-teams.webp",
+    "dimensions": "3584x3584"
+  }
+]

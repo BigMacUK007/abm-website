@@ -2,10 +2,10 @@
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
+const { inputs, textarea, disclaimer, button = 'Contact us', description = '', webhookUrl } = Astro.props;
 ---
 
-<form>
+<form id="contact-form">
   {
     inputs &&
       inputs.map(
@@ -84,4 +84,64 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
       </div>
     )
   }
+
+  <div id="form-message" class="mt-4 text-center hidden">
+    <p class="text-sm"></p>
+  </div>
 </form>
+
+<script define:vars={{ webhookUrl }}>
+  const form = document.getElementById('contact-form');
+  const messageDiv = document.getElementById('form-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Get form data
+    const formData = new FormData(form);
+    const data = {};
+
+    // Convert FormData to JSON object
+    for (const [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+
+    // Show loading state
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    try {
+      // Log the data being sent for debugging
+      console.log('Sending data:', data);
+
+      // Send to webhook
+      await fetch(webhookUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      // With no-cors mode, we can't read the response, so we assume success
+      // Success message
+      messageDiv.classList.remove('hidden');
+      messageDiv.querySelector('p').textContent = 'Thank you! Your message has been sent successfully.';
+      messageDiv.querySelector('p').className = 'text-sm text-green-600 dark:text-green-400';
+      form.reset();
+    } catch (error) {
+      // Error message
+      console.error('Error sending form:', error);
+      messageDiv.classList.remove('hidden');
+      messageDiv.querySelector('p').textContent = 'Sorry, there was an error sending your message. Please try again.';
+      messageDiv.querySelector('p').className = 'text-sm text-red-600 dark:text-red-400';
+    } finally {
+      // Reset button
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+</script>

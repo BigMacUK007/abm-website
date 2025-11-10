@@ -9,6 +9,9 @@ import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 
+import trainingWorkshop from '~/assets/images/abm-training-workshop.webp';
+import aiToolsTraining from '~/assets/images/ai-tools-hands-on-training.webp';
+
 const metadata = {
   title: 'ABM AI Accelerator Training — Transform Your Team Into Experts',
 };
@@ -51,15 +54,16 @@ const metadata = {
   <!-- Training Options Section -->
   <Features2
     title="Choose Your Training Path"
+    columns={2}
     items={[
       {
-        title: 'Public Training',
-        description: 'Join Our Open CIM Course. Next dates monthly. Central London location. Mix with other professionals. CIM certification included.',
+        title: 'Open Course Training',
+        description: 'Join the one-day Open CIM Workshop. The popular online ABM course is a great opportunity to train alongside other marketers from a range of sectors.',
         icon: 'tabler:users',
       },
       {
         title: 'In-House Training [FEATURED]',
-        description: 'Exclusive to Your Team. Customised to your industry. Your location or virtual. Confidential discussion of accounts. Team alignment workshop. For up to 12 people.',
+        description: 'Exclusive to Your Team. Customised to your industry and company. Your location or virtual. Confidential discussion of accounts. Team alignment workshop. For up to 12 people.',
         icon: 'tabler:home',
       },
     ]}
@@ -88,7 +92,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: trainingWorkshop,
       alt: 'Training Workshop',
     }}
   >
@@ -139,33 +143,33 @@ const metadata = {
     title="What Your Team Will Master"
     items={[
       {
-        title: 'Module 1: ABM Foundations',
-        description: 'ABM vs traditional marketing. One-to-one, one-to-few, one-to-many models. Building your ABM business case. Quick wins to prove value.',
+        title: 'Module 1: ABM Strategy & Value Creation',
+        description: 'Understanding ABM value and impact. Setting targets and KPIs. Aligning sales and marketing with buyers. ROI framework development.',
         icon: 'tabler:building',
       },
       {
-        title: 'Module 2: Account Intelligence with AI',
-        description: 'LinkedIn Sales Navigator mastery. AI research tools and automation. Building account dossiers. Trigger event monitoring.',
-        icon: 'tabler:brain',
+        title: 'Module 2: Account Selection & Profiling',
+        description: 'Developing your Ideal Customer Profile. Account prioritisation and tiering. AI-powered account intelligence. Building 360-degree account views.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Module 3: Stakeholder Engagement',
-        description: 'Mapping buying committees. Role-based messaging. Multi-threading strategies. Executive engagement tactics.',
+        title: 'Module 3: Stakeholder Mapping & Engagement',
+        description: 'Identifying buying committees. Creating personalised buyer experiences. Multi-threading strategies. Qualifying and nurturing leads.',
         icon: 'tabler:users',
       },
       {
-        title: 'Module 4: Campaign Orchestration',
-        description: 'Content personalisation at scale. LinkedIn outreach automation. Email sequence optimization. Direct mail integration.',
+        title: 'Module 4: ABM Campaign Execution',
+        description: 'Developing awareness and lead tactics. Partnership marketing leverage. Multi-channel orchestration. Upselling and cross-selling.',
         icon: 'tabler:send',
       },
       {
-        title: 'Module 5: Sales Alignment',
-        description: 'SLA development. Handoff protocols. Feedback loops. Joint planning sessions.',
-        icon: 'tabler:git-merge',
+        title: 'Module 5: Marketing Technology & AI Integration',
+        description: 'Building your MarTech stack. Integrating AI tools (ChatGPT, Claude, Apollo). Automation workflows. Data and CRM integration.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Module 6: Measurement & Optimisation',
-        description: 'ABM-specific metrics. Attribution models. ROI calculation. Continuous improvement.',
+        title: 'Module 6: Performance Measurement & Optimisation',
+        description: 'ABM-specific metrics. Sales and marketing performance. Integrated ABM framework. Continuous improvement strategies.',
         icon: 'tabler:chart-line',
       },
     ]}
@@ -178,7 +182,7 @@ const metadata = {
     items={[
       {
         title: 'Research & Intelligence',
-        description: 'ChatGPT/Claude for account research. Perplexity for real-time insights. Apollo/Cognism for contact enrichment. Crystal Knows for personality insights.',
+        description: 'Selected tools for account research, real-time insights, contact enrichment and for personality insights.',
       },
       {
         title: 'Content & Messaging',
@@ -190,7 +194,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: aiToolsTraining,
       alt: 'AI Tools',
     }}
   >
@@ -201,29 +205,6 @@ const metadata = {
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Trainer Profile -->
-  <Content
-    id="trainer"
-    isAfterContent
-    title="Learn from the Authority"
-    items={[
-      {
-        title: 'Credentials',
-        description: 'Course Director for CIM\'s open ABM programme. 25+ years B2B marketing excellence. Trained 300+ enterprise teams including Basware, Global Knowledge, Serena Software. Published ABM methodologies and frameworks. Pioneer in ABM+AI integration.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Patrick Rea',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patrick Rea FCIM</h3>
-      <p class="text-sm italic mb-2">CIM ABM Course Director & B2B Innovation Leader</p>
-      <p class="text-lg italic">"I don't just teach ABM theory—I'm actively running ABM campaigns with AI for clients daily. Your team learns what's working NOW, not what worked five years ago."</p>
     </Fragment>
   </Content>
 
@@ -291,7 +272,7 @@ const metadata = {
       {
         variant: 'secondary',
         text: 'View Public Dates',
-        href: '/contact',
+        href: 'https://www.cim.co.uk/learn-develop/training-development/training-courses/account-based-marketing-abm/',
       },
       {
         variant: 'secondary',
@@ -312,16 +293,4 @@ const metadata = {
       <strong>Option 3: Download Information</strong> — Detailed curriculum. Pricing options. Case studies to share with your team.
     </Fragment>
   </CallToAction>
-
-  <!-- Bottom Trust Banner -->
-  <Content
-    isAfterContent
-    title="Join 300+ Enterprise Teams"
-  >
-    <Fragment slot="content">
-      <p class="text-center text-lg">
-        who've transformed their ABM performance through our training
-      </p>
-    </Fragment>
-  </Content>
 </Layout>

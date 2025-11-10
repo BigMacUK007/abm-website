@@ -7,8 +7,11 @@ import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import audienceImage from '~/assets/images/captivated-audience-abm-training.webp';
+import philosophy from '~/assets/images/our-philosophy-abm-transformation.webp';
+
 const metadata = {
-  title: 'About — Patrick Rea FCIM & ABM+AI Solutions',
+  title: 'About — Patrick Rea FCIM & ABM Prospector',
 };
 ---
 
@@ -16,7 +19,7 @@ const metadata = {
   <!-- Hero Section -->
   <Hero>
     <Fragment slot="title">
-      About <span class="text-accent dark:text-white">ABM+AI Solutions</span>
+      About <span class="text-accent dark:text-white">ABM Prospector</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -24,37 +27,48 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <!-- Patrick Rea Profile -->
+  <!-- The Team -->
   <Content
     isReversed
-    title="Patrick Rea FCIM"
+    title="The Team Making ABM Faster with AI"
     items={[
       {
-        title: 'CIM ABM Course Director',
-        description: 'Course Director for the Chartered Institute of Marketing\'s ABM programme, training B2B marketing professionals globally.',
+        title: 'ABM Strategy',
+        description: 'Enterprise account planning and campaign architecture',
       },
       {
-        title: '25+ Years B2B Excellence',
-        description: 'Quarter century of B2B marketing leadership across enterprise technology, SaaS, and professional services sectors.',
+        title: 'Digital Marketing',
+        description: 'Automation, personalisation, and analytics',
       },
       {
-        title: '300+ Enterprises Transformed',
-        description: 'Trained and consulted with leading organisations including Basware, Global Knowledge, and Serena Software.',
+        title: 'Sales Excellence',
+        description: 'Enablement, process, and pipeline acceleration',
       },
       {
-        title: 'Active Practitioner',
-        description: 'Not just teaching theory—actively running ABM+AI campaigns daily, staying at the forefront of what works now.',
+        title: 'AI Implementation',
+        description: 'Tool integration, prompt engineering, and workflow automation',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Patrick Rea FCIM',
+      src: audienceImage,
+      alt: 'Captivated Audience',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">CIM ABM Course Director & B2B Innovation Leader</h3>
-      <p class="text-lg italic mb-4">
-        "ABM without AI is like navigation without GPS—possible, but unnecessarily difficult. We're not just adopting AI; we're reimagining ABM from the ground up."
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Led by Patrick Rea FCIM</h3>
+      <p class="text-lg mb-4">CIM's ABM Course Director & Founder</p>
+      <p class="text-lg font-semibold mb-4">Supported by Specialists In:</p>
+      <div class="space-y-4 mb-6">
+        <p class="text-base"><strong>Collective Impact:</strong></p>
+        <ul class="list-disc list-inside space-y-2 text-base">
+          <li>300+ enterprises transformed</li>
+          <li>75+ years combined B2B experience</li>
+          <li>Active campaigns across 15+ industries</li>
+          <li>Continuous testing and innovation</li>
+        </ul>
+      </div>
+      <p class="text-base italic">
+        <strong>Why a Team Matters:</strong> "Modern ABM requires diverse expertise. While Patrick sets the strategic vision as CIM's Course Director, our specialists ensure every aspect of your programme—from AI implementation to sales alignment—is world-class. We're practitioners, not theorists, running real campaigns daily."
       </p>
     </Fragment>
 
@@ -96,7 +110,7 @@ const metadata = {
     isReversed
     title="Our Philosophy"
     image={{
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: philosophy,
       alt: 'Team Strategy Session',
     }}
   >
@@ -109,7 +123,7 @@ const metadata = {
           <strong>AI isn't replacing ABM—it's unlocking its full potential.</strong> By automating the time-consuming research and execution tasks, AI allows teams to focus on strategic thinking, relationship building, and delivering genuine value to target accounts.
         </p>
         <p class="text-lg leading-relaxed">
-          <strong>But technology alone isn't the answer.</strong> Successful ABM+AI requires the right combination of methodology, tools, training, and strategic alignment. That's why we offer a complete ecosystem—from done-for-you services to team training to strategic planning support.
+          <strong>But technology alone isn't the answer.</strong> Successful ABM Prospector requires the right combination of methodology, tools, training, and strategic alignment. That's why we offer a complete ecosystem—from done-for-you services to team training to strategic planning support.
         </p>
         <p class="text-xl font-bold mt-8 text-accent dark:text-white">
           Our mission: Help B2B teams adopt AI-enhanced ABM faster, more effectively, and with better results than they could achieve alone.
@@ -125,7 +139,7 @@ const metadata = {
   <!-- Our Methodology -->
   <Steps
     title="Our Methodology"
-    subtitle="How we help teams succeed with ABM+AI"
+    subtitle="How we help teams succeed with ABM Prospector"
     items={[
       {
         title: 'Proven ABM Foundation',
@@ -150,40 +164,12 @@ const metadata = {
     ]}
   />
 
-  <!-- Client Success -->
-  <Content
-    isReversed
-    title="Client Success Stories"
-    items={[
-      {
-        title: 'Enterprise Technology Leader',
-        description: 'Transformed pipeline generation with AI-powered account intelligence, moving from weeks of manual research to qualified meetings in days.',
-      },
-      {
-        title: 'B2B SaaS Scale-Up',
-        description: 'Entire marketing team trained in ABM+AI methodology, establishing internal centre of excellence and dramatically improving sales-marketing alignment.',
-      },
-      {
-        title: 'Professional Services Firm',
-        description: 'Created single-page GTM strategy using myGTMplan methodology, aligning partners and team around clear account targeting and engagement approach.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Client Success',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Trusted by Leading B2B Teams</h3>
-    </Fragment>
-  </Content>
-
   <!-- Call to Action -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start Your ABM+AI Journey',
+        text: 'Start Your ABM Prospector Journey',
         href: '/contact',
       },
       {

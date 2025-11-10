@@ -1,5 +1,5 @@
 site:
-  name: ABM+AI Solutions
+  name: ABM Prospector
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: ABM+AI Solutions
-    template: '%s — ABM+AI Solutions'
+    default: ABM Prospector
+    template: '%s — ABM Prospector'
   description: "Transform Your B2B Revenue Engine With AI-Powered ABM. Intelligence, Training & Strategy Services by Patrick Rea FCIM, CIM ABM Course Director."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: ABM+AI Solutions
+    site_name: ABM Prospector
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

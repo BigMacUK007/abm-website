@@ -6,11 +6,14 @@ import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 
+import aiTechnology from '~/assets/images/why-ai-changes-everything-in-abm-game-changing-capabilities.webp';
+import aiTools from '~/assets/images/the-ai-stack-that-powers-modern-abm-master-the-tools.webp';
+import futureRevenue from '~/assets/images/b2b-revenue-generation-has-changed-forever.webp';
+
 const metadata = {
-  title: 'ABM+AI Solutions — Transform Your B2B Revenue Engine',
+  title: 'ABM Prospector — Transform Your B2B Revenue Engine',
   ignoreTitleTemplate: true,
 };
 ---
@@ -31,6 +34,16 @@ const metadata = {
       },
     ]}
   >
+    <Fragment slot="bg">
+      <div
+        class="absolute inset-0 bg-[url(/images/hero-hex-pattern.svg)] bg-cover bg-center opacity-80 dark:opacity-75"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-white/85 via-white/65 to-white/45 dark:from-slate-950/85 dark:via-slate-950/65 dark:to-slate-950/45"
+        aria-hidden="true"
+      ></div>
+    </Fragment>
     <Fragment slot="title">
       Where ABM Meets AI: <span class="text-accent dark:text-white">Intelligence, Training & Strategy</span> in Perfect Alignment
     </Fragment>
@@ -55,6 +68,7 @@ const metadata = {
     tagline="ABM Has Changed"
     title="Have You?"
     subtitle="The companies winning today aren't working harder—they're working smarter with AI-enhanced ABM"
+    columns={3}
     items={[
       {
         title: 'From Manual to Intelligent',
@@ -80,7 +94,7 @@ const metadata = {
 
   <!-- Core Offering Section -->
   <Features
-    title="The Complete ABM+AI Ecosystem"
+    title="The Complete ABM Prospector Ecosystem"
     subtitle="Start anywhere. Better together."
     columns={2}
     items={[
@@ -90,7 +104,7 @@ const metadata = {
         icon: 'tabler:target',
       },
       {
-        title: 'ABM+AI Training',
+        title: 'ABM Prospector Training',
         description: 'Build Internal Capability. Certified ABM methodology, hands-on AI tool training, custom workshops for your team, ongoing implementation support.',
         icon: 'tabler:school',
       },
@@ -134,7 +148,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: aiTechnology,
       alt: 'AI Technology',
     }}
   >
@@ -216,39 +230,13 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: aiTools,
       alt: 'AI Tools',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Master the Tools</h3>
       We don't just use these tools—we teach you to master them
-    </Fragment>
-  </Content>
-
-  <!-- Authority Section -->
-  <Content
-    id="authority"
-    isAfterContent
-    title="Learn from ABM+AI Leadership"
-    items={[
-      {
-        title: 'Unique Position',
-        description: "CIM's ABM Course Director. Team leader in integrating AI into ABM methodology. Active practitioner running campaigns daily. 25+ years B2B marketing excellence.",
-      },
-      {
-        title: 'Current Innovation',
-        description: 'Developing ABM AI Engineering frameworks. Creating next-generation prospecting systems. Building AI-powered GTM strategies. Training enterprise teams globally.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Patrick Rea',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patrick Rea FCIM</h3>
-      <p class="text-lg italic">"ABM without AI is like navigation without GPS—possible, but unnecessarily difficult. We're not just adopting AI; we're reimagining ABM from the ground up."</p>
     </Fragment>
   </Content>
 
@@ -278,10 +266,10 @@ const metadata = {
   <!-- Resources Section -->
   <Features
     id="resources"
-    title="Free ABM+AI Resources"
+    title="Free ABM Prospector Resources"
     items={[
       {
-        title: 'ABM+AI Playbook',
+        title: 'ABM Prospector Playbook',
         description: 'Complete guide to modern ABM',
         icon: 'tabler:book',
       },
@@ -297,7 +285,7 @@ const metadata = {
       },
       {
         title: 'Weekly Insights',
-        description: 'Latest ABM+AI strategies',
+        description: 'Latest ABM Prospector strategies',
         icon: 'tabler:mail',
       },
     ]}
@@ -330,7 +318,7 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <strong>See It In Action:</strong> Free Account Analysis. Send us any target company. We'll show you what AI-powered intelligence looks like.<br/><br/>
-      <strong>Learn The Methods:</strong> Explore Training Options. Public courses or private workshops. Master ABM+AI with expert guidance.<br/><br/>
+      <strong>Learn The Methods:</strong> Explore Training Options. Public courses or private workshops. Master ABM Prospector with expert guidance.<br/><br/>
       <strong>Get Strategic:</strong> Book Planning Session. Create your one-page GTM strategy. Align your entire revenue team.
     </Fragment>
   </CallToAction>
@@ -340,7 +328,7 @@ const metadata = {
     isAfterContent
     title="B2B Revenue Generation Has Changed Forever"
     image={{
-      src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      src: futureRevenue,
       alt: 'Future of B2B Revenue',
     }}
   >
