@@ -102,7 +102,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', w
     const data = {};
 
     // Convert FormData to JSON object
-    for (let [key, value] of formData.entries()) {
+    for (const [key, value] of formData.entries()) {
       data[key] = value;
     }
 
@@ -117,7 +117,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', w
       console.log('Sending data:', data);
 
       // Send to webhook
-      const response = await fetch(webhookUrl, {
+      await fetch(webhookUrl, {
         method: 'POST',
         mode: 'no-cors',
         headers: {

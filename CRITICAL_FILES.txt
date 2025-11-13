@@ -1,0 +1,144 @@
+CRITICAL FILES FOR BLOG SYSTEM
+================================================================================
+
+DOCUMENTATION (NEW - CREATED TODAY)
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/BLOG_DOCS_INDEX.md
+/Users/benmacdonald/!Development/T40 OS/Astro website/QUICK_REFERENCE.md
+/Users/benmacdonald/!Development/T40 OS/Astro website/BLOG_IMPLEMENTATION_OVERVIEW.md
+/Users/benmacdonald/!Development/T40 OS/Astro website/BLOG_ARCHITECTURE.md
+
+BLOG ARTICLE STORAGE
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/data/post/
+  - astrowind-template-in-depth.mdx
+  - get-started-website-with-astro-tailwind-css.md
+  - how-to-customize-astrowind-to-your-brand.md
+  - landing.md
+  - markdown-elements-demo-post.mdx
+  - useful-resources-to-create-websites.md
+
+CONTENT MANAGEMENT
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/content/config.ts
+  Purpose: Zod schema for frontmatter validation
+  Key: defineCollection, postCollection schema
+
+BLOG ROUTES
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/[...blog]/index.astro
+  Purpose: Single post page route
+  Key: getStaticPaths from getStaticPathsBlogPost()
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/[...blog]/[...page].astro
+  Purpose: Blog list + pagination
+  Key: getStaticPaths from getStaticPathsBlogList()
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/[...blog]/[category]/index.astro
+  Purpose: Category archives
+  Key: getStaticPaths from getStaticPathsBlogCategory()
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/[...blog]/[tag]/index.astro
+  Purpose: Tag archives
+  Key: getStaticPaths from getStaticPathsBlogTag()
+
+BLOG COMPONENTS
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/components/blog/
+  - ListItem.astro          (post card)
+  - SinglePost.astro        (full article)
+  - List.astro              (list wrapper)
+  - Pagination.astro        (navigation)
+  - Tags.astro              (tag display)
+  - RelatedPosts.astro      (related section)
+  - Grid.astro
+  - GridItem.astro
+  - Headline.astro
+  - ToBlogLink.astro
+
+BLOG UTILITIES
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/utils/blog.ts
+  Key functions:
+  - fetchPosts()
+  - getNormalizedPost()
+  - generatePermalink()
+  - findPostsBySlugs()
+  - findPostsByIds()
+  - findLatestPosts()
+  - getStaticPathsBlogList()
+  - getStaticPathsBlogPost()
+  - getStaticPathsBlogCategory()
+  - getStaticPathsBlogTag()
+  - getRelatedPosts()
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/utils/permalinks.ts
+  Purpose: URL generation utilities
+  Key: getPermalink(), cleanSlug()
+
+TYPESCRIPT DEFINITIONS
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/types.d.ts
+  Interface: Post
+  Interface: Taxonomy
+  Interface: MetaData
+  (+related interfaces)
+
+CONFIGURATION
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/config.yaml
+  Section: apps.blog
+  Key settings:
+  - isEnabled
+  - postsPerPage
+  - post.isEnabled
+  - post.permalink
+  - list.isEnabled
+  - category.isEnabled
+  - tag.isEnabled
+  - isRelatedPostsEnabled
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/astro.config.ts
+  Integrations: mdx, sitemap, icon, etc.
+  Adapters: cloudflare
+  Markdown: Custom remark/rehype plugins
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/package.json
+  Framework: astro@5.12.9
+  CSS: tailwindcss@3.4.17
+  Markdown: @astrojs/mdx@4.3.3
+  Other: sharp, zod, reading-time
+
+ENVIRONMENT
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/.env
+  Note: Contains Apostrophe CMS config (unused)
+
+ADMIN AREA (TODO - EMPTY)
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/admin/
+  Status: Directory exists, empty
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/pages/api/
+  Status: Directory exists, mostly empty
+
+SUPPORTING UTILITIES
+================================================================================
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/utils/images.ts
+  Purpose: Image optimization, findImage()
+
+/Users/benmacdonald/!Development/T40 OS/Astro website/src/utils/frontmatter.ts
+  Purpose: Remark/Rehype plugins
+  - readingTimeRemarkPlugin
+  - responsiveTablesRehypePlugin
+  - lazyImagesRehypePlugin
+
+================================================================================
+START HERE:
+1. Read BLOG_DOCS_INDEX.md
+2. Read QUICK_REFERENCE.md
+3. Study BLOG_IMPLEMENTATION_OVERVIEW.md
+4. Review BLOG_ARCHITECTURE.md
+
+For file editing, use absolute paths shown above to avoid path resolution issues.
+================================================================================
