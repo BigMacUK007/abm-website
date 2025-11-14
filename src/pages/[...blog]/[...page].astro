@@ -24,7 +24,8 @@ const currentPage = page.currentPage ?? 1;
 // const allTags = await findTags();
 
 const metadata = {
-  title: `Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `News & Insights${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  description: 'ABM Prospector updates, product learnings, and account-based insights for modern revenue teams.',
   robots: {
     index: blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,
@@ -37,10 +38,8 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <Headline
-      subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
-    >
-      The Blog
+    <Headline subtitle="Stories from the ABM Prospector team covering platform updates, customer wins, and practical ABM advice.">
+      News & Insights
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
