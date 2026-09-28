@@ -1,6 +1,6 @@
 site:
   name: ABM Prospector
-  site: 'https://astrowind.vercel.app'
+  site: 'https://abmprospector.co.uk'
   base: '/'
   trailingSlash: false
 
